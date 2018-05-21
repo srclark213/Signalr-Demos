@@ -1,0 +1,20 @@
+<div class="page-header"><h1>Group Demo</h1> <small>Group: {{group}}</small></div>
+
+<form>
+  <div class="col-lg-6">
+    
+      <label for="notification">Notification</label>
+      <input type="text" name="notification" class="form-control" #notification>
+      <label for="group">Group</label>
+      <input type="text" name="group" class="form-control" #notificationgroup>
+
+      <br/>
+      <button type="button" class="btn btn-default" (click)="notify(notification.value, notificationgroup.value)">Send</button>
+  </div>
+</form>
+
+<span class="clearfix"></span>
+<br/>
+<div class="col-lg-6">
+<app-notification-box></app-notification-box>
+</div>

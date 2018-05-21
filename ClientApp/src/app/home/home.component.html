@@ -1,0 +1,17 @@
+<div class="page-header"><h1>SignalR Demo</h1></div>
+
+<form>
+  <div class="col-lg-6">
+    <label>Notification</label>
+    <input type="text" class="form-control" #notification>
+
+    <button type="button" class="btn btn-default" (click)="notify(notification.value)">Send Notification</button>
+    <button type="button" class="btn btn-default" (click)="toast(notification.value)">Send Toast</button>
+  </div>
+</form>
+
+<span class="clearfix"></span>
+<br/>
+<div class="col-lg-6">
+<app-notification-box></app-notification-box>
+</div>
